@@ -1,0 +1,19 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /distributed-id-leaf
+
+# 美团Leaf配置
+leaf:
+  name: com.sankuai.leaf.opensource.test
+  segment:
+    enable: true
+    url: jdbc:mysql://127.0.0.1:3306/db_leaf?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  snowflake:
+    enable: true
+    # zookeeper ip
+    address: 127.0.0.1
+    # zookeeper port
+    port: 2181

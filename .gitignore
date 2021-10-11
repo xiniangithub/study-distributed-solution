@@ -1,0 +1,5 @@
+# Project exclude paths
+/distributed-id-leaf/target/
+/distributed-session-jwt/target/
+/distributed-session-spring/target/
+/distributed-session-token/target/
